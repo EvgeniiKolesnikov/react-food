@@ -4,19 +4,23 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
+import NotFound from './components/pages/NotFound';
 
 function App() {
   return (
     <>
-      <Header />
-      <main className='container content'>
-        <Router>
-          <Route path='/' component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/contacts' component={Contact} />
-        </Router>
-      </main>
-      <Footer />
+      <Router>
+        <Header />
+        <main className='container content'>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/about' component={About} />
+            <Route path='/contacts' component={Contact} />
+            <Route component={NotFound} />
+          </Switch>
+        </main>
+        <Footer />
+      </Router>
     </>
   );
 }
