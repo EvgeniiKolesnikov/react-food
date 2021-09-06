@@ -6,7 +6,7 @@ const Header = () => {
     <nav className='blue darken-1'>
       <div className='nav-wrapper'>
         <Link to='/' className='brand-logo'>
-          React Fortnite Shop
+          React Food
         </Link>
         <ul id='nav-mobile' className='right hide-on-med-and-down'>
           <li>

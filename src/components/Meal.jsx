@@ -12,7 +12,7 @@ const Meal = (props) => {
         <span className='card-title'>{strMeal}</span>
       </div>
       <div className='card-action'>
-        <Link to={`/meal/${idMeal}`} className='btn'>
+        <Link to={`/meal/${idMeal}`} className='btn blue'>
           Watch recipe
         </Link>
       </div>
